@@ -8,7 +8,7 @@
 This repository delivers a complete analytics case study on Instacart’s e-commerce order data, covering product, customer, and behavioral analytics from end to end.  
 **All data cleaning steps are fully documented in the included Jupyter notebook, so you can follow every stage of the data preparation process.**
 
-> **Project conducted, analyzed, and documented end-to-end by [Mert Ovet](https://linkedin.com/in/mertovet)**
+> **Project conducted, analyzed, and documented by [Mert Ovet](https://linkedin.com/in/mertovet)**
 >
 > All data cleaning, feature engineering, segmentation logic, SQL metrics, business questions, and analytic methodology were designed and implemented by myself, ensuring full control over every parameter, analytical decision, and project milestone.
 ---
