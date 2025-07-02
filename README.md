@@ -19,7 +19,7 @@ This repository delivers a complete analytics case study on Instacart’s e-comm
 - **Raw Data:** ~3 million orders, 200K+ users, 50K+ products, 20 departments, 130 aisles
 - **Files:** `orders.csv`, `order_products__prior.csv`, `order_products__train.csv`, `products.csv`, `departments.csv`, `aisles.csv`
 - **Data Cleaning:**  
-  - See all cleaning stages in [`Instacart Market Basket Data Cleaning.ipynb`](./Instacart%20Market%20Basket%20Data%20Cleaning%20(1).ipynb)
+  - See all cleaning stages in [`Instacart Market Basket Data Cleaning.ipynb`](./Instacart%20Market%20Basket%20Data%20Cleaning%20(2).ipynb)
   - Inspected and cleaned missing values, anomalies, datatypes, and duplicates
   - Exported cleaned tables as CSV for SQL analytics
 
