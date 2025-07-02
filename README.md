@@ -237,6 +237,7 @@ This step pinpoints the ‘last activity’ date for each user, which is essenti
 ### 5. Assign Churn Risk Segment to Each User (CTE)
 
 ![image](https://github.com/user-attachments/assets/85712cf8-17ae-4113-8367-c551455638ff)
+
 Each user is categorized by churn risk based on how long it has been since their last order. This allows us to prioritize outreach and retention actions.
 
 ### 6. Aggregate Results by Segment and Churn Risk
