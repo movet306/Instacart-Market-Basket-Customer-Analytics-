@@ -109,6 +109,7 @@ Looking at the data, we see that customer activity starts very low during the ni
 
 ## 11. Repeat Purchase Rate (Reorder Rate) by Product
 **Business Question:** Which products have the highest repeat purchase rates? What does this reveal about customer loyalty and product stickiness on Instacart?
+
 ![image](https://github.com/user-attachments/assets/0f484238-ef9e-4f8d-b8ad-ef7e34897827)
 
 ![image](https://github.com/user-attachments/assets/c686b466-9a78-4235-8f01-13aec29e4487)
@@ -182,6 +183,7 @@ This tiered pattern illustrates the exponential value of customer loyalty: as cu
 ## 13. Product Affinity / Market Basket Analysis
 **Business Question:** Which pairs of products are most frequently purchased together, and what cross-sell or bundling opportunities can we identify from these affinities?
 Here I’ll use a self-join on the order-product detail table to find product pairs that appear in the same basket.
+
 ![image](https://github.com/user-attachments/assets/a7b69533-f0b5-46ec-b002-abaf97a2f483)
 
 ![image](https://github.com/user-attachments/assets/d7af994c-763b-4601-94de-983aa1e061d4)
@@ -191,28 +193,34 @@ This analysis clearly shows Bag of Organic Bananas is at the heart of most top p
 ## 14. Churn Analysis
 **Business Question:** How can we identify churned customers—those at risk of not returning—based on their order patterns, even when exact order dates are not available?
 ### 1.Customer Segmentation(CTE):
+
 ![image](https://github.com/user-attachments/assets/9022f407-9a25-484b-bc68-385b57d448d9)
 
 In this step, I used a Common Table Expression (CTE) named user_segments to assign each user to a customer segment based on their total number of orders. This CTE enables us to reference these segments in subsequent queries for further analysis, such as churn calculation.
 
 ### 2. Calculate Cumulative Days Since First Order (CTE)
+
 ![image](https://github.com/user-attachments/assets/d766ef4a-cd70-4b43-b4ce-d790780fbadc)
 
 Using a window function, I calculated the running total of days for each user. This shows exactly how much time has passed at every purchase event.
 
 ### 3. Identify Each User’s Last Order Day (CTE)
+
 ![image](https://github.com/user-attachments/assets/5b5eba63-4624-452a-97b1-aea19419ae54)
 
 This step pinpoints the ‘last activity’ date for each user, which is essential for measuring churn risk.
 
 ### 4. Define the Latest Day in the Dataset (CTE)
+
 ![image](https://github.com/user-attachments/assets/a5224456-5ede-4cbe-8103-53d2b0fe7648)
 
 ### 5. Assign Churn Risk Segment to Each User (CTE)
+
 ![image](https://github.com/user-attachments/assets/85712cf8-17ae-4113-8367-c551455638ff)
 Each user is categorized by churn risk based on how long it has been since their last order. This allows us to prioritize outreach and retention actions.
 
 ### 6. Aggregate Results by Segment and Churn Risk
+
 ![image](https://github.com/user-attachments/assets/2cc58f0e-86db-470d-8e98-e6a7636fad49)
 
 This result shows, for each segment, how many users are “Active,” “Low Risk,” “Medium Risk,” or “High Risk,” and what percentage of the segment they represent.
