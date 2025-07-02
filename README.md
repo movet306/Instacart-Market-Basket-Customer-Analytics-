@@ -93,6 +93,7 @@ Overall, these insights highlight that successful assortment strategies should p
 
 ## 9. Weekly Order Patterns – Order Volume by Day of Week
 **Business Question:** Which days of the week see the highest order activity? Are there notable weekly patterns that can help guide staffing and promotional planning?
+
 ![image](https://github.com/user-attachments/assets/72cdf226-efae-431b-8125-02bc7a8ab2f5)
 
 ![image](https://github.com/user-attachments/assets/efc772bf-4e6e-4256-9a96-88c9618039db)
