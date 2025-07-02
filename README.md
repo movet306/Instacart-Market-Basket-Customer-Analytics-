@@ -8,6 +8,9 @@
 This repository delivers a complete analytics case study on Instacart’s e-commerce order data, covering product, customer, and behavioral analytics from end to end.  
 **All data cleaning steps are fully documented in the included Jupyter notebook, so you can follow every stage of the data preparation process.**
 
+> **Project conducted, analyzed, and documented end-to-end by [Mert Ovet](https://linkedin.com/in/mertovet)**
+>
+> All data cleaning, feature engineering, segmentation logic, SQL metrics, business questions, and analytic methodology were designed and implemented by myself, ensuring full control over every parameter, analytical decision, and project milestone.
 ---
 
 ## 2. Dataset & Data Pipeline
@@ -291,6 +294,65 @@ At this stage, we know for each cohort and each month how many users are still a
 The resulting retention analysis revealed that, as is common in e-commerce, user engagement drops sharply after the initial transaction: only about 14% to 23% of customers make a repeat purchase in the months following their first order. However, the retention curve stabilizes relatively quickly, with around 15–20% of users remaining active for up to three years, which demonstrates the presence of a loyal customer segment.
 This insight highlights two critical opportunities for Instacart’s growth strategy. First, it is essential to focus on early engagement—by investing in onboarding, reactivation campaigns, and targeted incentives during the first months, Instacart can increase the proportion of new users who return for additional orders. Second, understanding and learning from the behaviors of long-term loyal customers can help shape future retention and loyalty initiatives, ensuring that successful tactics are scaled across the broader user base.
 By continuously monitoring these retention metrics and experimenting with early lifecycle engagement strategies, Instacart can both reduce churn and expand its core group of repeat customers, ultimately driving higher lifetime value and sustainable growth.
+
+## 16. Key Insights
+
+The analytics reveal that Instacart’s business is anchored by a narrow set of high-velocity products and recurring customer behaviors:
+
+- **Fresh produce and organic products are Instacart’s main growth engine.** Bananas (both organic and regular) alone make up the top-selling items, consistently appearing in the highest volume orders and forming the centerpiece of most product affinity pairs and trios.
+
+- **A small set of departments and aisles drives the majority of orders.** Over half of all purchases come from just three categories—“Dairy & Eggs”, “Snacks”, and “Fresh Fruits & Vegetables”—while aisles like “Fresh Fruits” and “Fresh Vegetables” record sales volumes far above any others.
+
+- **Order activity is highly patterned:** The majority of weekly sales happen on Sundays and Mondays, with order volume peaking between 10 AM and 3 PM. These recurring peaks reveal predictable shopping rhythms, providing a playbook for optimizing inventory, fulfillment, and campaign timing.
+
+- **Customer value is defined by frequency, not just basket size.** While average basket size only increases marginally by segment, Loyal Customers place nearly 35 orders per user—over six times more than Occasional Buyers. As a result, Loyal Customers’ proxy CLV (~389) dwarfs that of Occasional Buyers (~61).
+
+- **Churn risk is a core business challenge.** Nearly 80% of even the most loyal customers are flagged as high risk for churn, and engagement across all segments falls sharply after the first order. Yet, a core of loyal users maintains steady retention up to three years, confirming that early drop-off and ongoing disengagement are distinct issues.
+
+- **Market basket analysis shows clear, actionable affinities:** The most frequent product pairings and trios overwhelmingly involve organic bananas, strawberries, spinach, and avocados—confirming that health-focused customers repeatedly purchase these items together.
+
+- **Cohort analysis quantifies a sharp drop-off after first purchase** (retention plunges to 14–23% within the first few months), but also reveals a stable loyal segment: around 15–20% of users remain active up to three years after onboarding.
+
+---
+
+## 17. Strategic Recommendations
+
+Each action item is directly grounded in the findings above, ensuring Instacart’s strategy is data-driven and outcome-focused:
+
+1. **Double Down on Fresh & Organic Staples:**  
+   The outsized dominance of bananas, berries, and organic vegetables in both volume and repeat purchase suggests these categories should remain at the core of inventory, digital promotions, and homepage merchandising. For example, organic bananas feature in nearly every top affinity set—making them the logical anchor for marketing and bundling.
+
+2. **Tailor Campaigns to Shopping Rhythms:**  
+   With over a third of weekly orders placed on Sundays and Mondays, and activity peaking between 10 AM and 3 PM, align fulfillment staffing, delivery slots, and push campaigns to match these high-traffic periods. Time-limited offers on key days can further amplify sales.
+
+3. **Prioritize Retention—Especially Right After First Order:**  
+   Since most users churn shortly after their first purchase, invest in onboarding journeys, reactivation messages, and time-sensitive discounts during a customer’s first month. For example, push targeted offers to new customers within days of their initial order to drive repeat purchase while engagement is still high.
+
+4. **Grow the Loyal Segment—Not Just Basket Size:**  
+   Proxy CLV analysis confirms that increasing purchase frequency—moving users from Occasional to Regular, and Regular to Loyal—delivers the biggest lift in value. Personalized email sequences and loyalty rewards (such as “every 5th order is free delivery”) should focus on nudging users up the loyalty curve.
+
+5. **Exploit Cross-Sell with Specific, Data-Backed Bundles:**  
+   Bundle “Frequently Bought Together” combos directly from the most common affinity sets: for example, “Organic Bananas + Strawberries + Baby Spinach” packs, which repeatedly show up in the top three-product baskets. In-app suggestions should be based on real affinity data, not guesswork.
+
+6. **Target Churn Risk with Proactive, Segment-Specific Outreach:**  
+   Monitor customers whose recency and frequency metrics indicate disengagement—especially among previously loyal users. Trigger reactivation offers, personalized messaging, or surveys when “days since last order” exceeds risk thresholds identified in the churn analysis.
+
+7. **Test and Expand Underperforming Categories:**  
+   Since a handful of departments and aisles underperform, pilot targeted campaigns (e.g., “Pantry Essentials Week”) or experiment with product assortment and pricing in these segments to drive incremental volume.
+
+By executing these tailored, evidence-based strategies, Instacart can systematically increase customer value, retention, and market share—while building a defensible, data-driven edge in the competitive grocery delivery space.
+
+---
+---
+
+## Project Owner
+
+**Mert Ovet**  
+[LinkedIn: linkedin.com/in/mertovet](https://linkedin.com/in/mertovet)
+
+For collaboration, feedback, or business inquiries, please connect via LinkedIn.
+
+---
 
 
 
